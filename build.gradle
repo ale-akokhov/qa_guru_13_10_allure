@@ -12,12 +12,12 @@ repositories {
 
 allure {
     report {
-        version.set("2.39.0")
+        version.set('2.39.0')
     }
     adapter {
         frameworks {
             junit5 {
-                adapterVersion.set("2.29.1")
+                adapterVersion.set('2.29.1')
             }
         }
     }
@@ -28,7 +28,8 @@ dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter',
             'com.codeborne:selenide:7.16.0',
-            'org.slf4j:slf4j-simple:2.0.16'
+            'org.slf4j:slf4j-simple:2.0.16',
+            'io.qameta.allure:allure-selenide:2.34.0'
     )
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
